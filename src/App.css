@@ -1,0 +1,356 @@
+
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+ 
+}
+
+:root {
+  --Color-Primary: rgb(247, 172, 75);
+  --Color-secondary: rgb(36, 36, 36);
+  --Icon-Size: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: inline;
+}
+
+/*Header and Sidebar*/
+
+.nav {
+  background-color: rgb(247, 172, 75);
+  color: #000;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  width: 100px;
+  height: 100%;
+  position: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px 45px 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: left;
+  margin: rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  height: 2px;
+  background: black;
+  width: 100%;
+  border-radius: 200px;
+}
+
+.line-contacts {
+  z-index: 1000000;
+  height: 2px;
+  background: #fff;
+  width: 100%;
+  border-radius: 200px;
+}
+
+.nav-list a{
+   text-decoration: none;
+   color: black;
+   font-size: 2rem;
+   padding: 20px 20px 15px 20px;
+   transition: 300ms;
+   height: auto;
+   border-radius: 7px;
+}
+.nav-list li {
+  margin: 50px;
+ 
+  
+}
+
+.nav-list a:hover {
+  background-color: #000;
+color: #fff;
+
+}
+.nav-logo a{
+text-decoration: none;
+color: black;
+}
+
+/*Main Body*/
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px 20px 120px;
+}
+
+.body h1 {
+  font-size: 40px;
+  padding: 20px;
+}
+
+.body p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.home {
+  width: 60%;
+}
+
+span {
+  color: var(--Color-Primary)
+}
+.about {
+
+}
+
+/*Skills*/
+
+.Skills {
+
+}
+
+/*skills Grid*/
+
+.skills-show {
+
+ display: grid;
+ justify-content: center;
+ grid-template-columns: 30% 30% 30%;
+ grid-template-rows:  1fr 1fr 1fr 50px;
+ gap: 20px;
+
+ 
+}
+
+.skills-programming {
+
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 1fr 50%;
+  gap: 20px;
+ 
+  
+ }
+
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 40px;
+  gap: 20px;
+  transition: 250ms;
+}
+
+.skills-card h3 {
+  font-size: 70px;
+}
+
+.skills-card h2 {
+  font-size: 30px;
+}
+
+.skills-card:hover {
+  translate: 0px -10px;
+}
+
+.myProgress {
+  width: 75%;
+  height: 20px;
+  background-color: var(--Color-Primary);
+  border-radius: 10px 10px 10px 10px;
+  
+}
+.myBar {
+  width: 100%;
+  background-color: grey;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.skills-text {
+
+  transition: transform 250ms;
+
+}
+
+.skills-logo{
+  transition: transform 250ms;
+}
+
+/*Skills Colors*/
+
+  /*Programming Colors*/
+  
+  .color-java {
+    width: 70%;
+    height: 20px;
+    background-color: var(--Color-Primary);
+    border-radius: 10px 10px 10px 10px;
+    
+  }
+  
+  .color-cpp {
+    width: 60%;
+    height: 20px;
+    background-color: var(--Color-Primary);
+    border-radius: 10px 10px 10px 10px;
+    
+  }
+  
+  .color-javascript {
+    width: 70%;
+    height: 20px;
+    background-color: var(--Color-Primary);
+  
+    border-radius: 10px 10px 10px 10px;
+    
+  }
+  
+  /*design bar colors*/
+  
+  .color-html {
+    width: 90%;
+    height: 20px;
+    background-color: var(--Color-Primary);
+    border-radius: 10px 10px 10px 10px;
+    
+  }
+  
+  .color-css {
+    width: 85%;
+    height: 20px;
+    background-color: var(--Color-Primary);
+    border-radius: 10px 10px 10px 10px;
+    
+  }
+  
+  .color-tailwind {
+    width: 60%;
+    height: 20px;
+    background-color: var(--Color-Primary);
+    border-radius: 10px 10px 10px 10px;
+    
+  }
+  
+  .color-bootstrap {
+    width: 90%;
+    height: 20px;
+    background-color: var(--Color-Primary);
+    border-radius: 10px 10px 10px 10px;
+    
+  }
+  
+  .color-react {
+    width: 75%;
+    height: 20px;
+    background-color: var(--Color-Primary);
+    border-radius: 10px 10px 10px 10px;
+    
+  }
+  
+  .color-photoshop {
+    width: 90%;
+    height: 20px;
+    background-color: var(--Color-Primary);
+    border-radius: 10px 10px 10px 10px;
+    
+  }
+  
+  .color-adobeXD {
+    width: 90%;
+    height: 20px;
+    background-color: var(--Color-Primary);
+    border-radius: 10px 10px 10px 10px;
+    
+  }
+  
+
+/* contact */
+.Contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-content {
+
+display:flex;
+align-self:center;
+width: fit-content;
+gap: 20px;
+background-color: #000;
+
+border-radius: 10px;
+flex-wrap: nowrap;
+}
+
+.contact-card{
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: var(--Icon-Size);
+  transition: 250ms;
+  box-shadow: #fff;
+
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: #fff;
+  
+}
+
+.contact-card:hover {
+  translate: 0px -10px;
+  box-shadow: #fff;
+  background-color: var(--Color-Primary);
+   color: #000;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+ margin-top: auto;
+  align-self: center;
+
+}
+
+.colorchange  {
+  width: 75%;
+  height: 20px;
+  background-color: var(--Color-Primary);
+  border-radius: 10px 10px 10px 10px;
+  
+}
+
+
+
