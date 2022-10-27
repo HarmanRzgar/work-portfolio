@@ -100,17 +100,22 @@ color: black;
 }
 
 .body h1 {
-  font-size: 40px;
+  font-size: 55px;
+  padding: 20px;
+}
+
+.body h2 {
+  font-size: 45px;
   padding: 20px;
 }
 
 .body p {
-  font-size: 20px;
+  font-size: 30px;
   padding: 10px;
 }
 
 .home {
-  width: 60%;
+  width: 90%;
 }
 
 span {
