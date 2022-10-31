@@ -23,7 +23,6 @@ function App() {
 
   return (
     <div className="App">
-    <Navbar/>
     <Sidebar/>
     <div className="body" >
     <Home/>

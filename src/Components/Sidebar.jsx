@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css'
 
-
+import { FaBars } from 'react-icons/fa';
 import { BsFillPersonFill, BsCodeSquare } from 'react-icons/bs'
 import { MdAlternateEmail } from 'react-icons/md'
 import { BiNetworkChart } from 'react-icons/bi'
@@ -24,17 +24,45 @@ function Sidebar() {
      ];
      
      let listSidebarIcons = sidebaricons.map((icons) =>
-               <li><a href={icons.Link}>{icons.icon}</a></li>
+               <li><a href={icons.Link} onClick={toggleFunction}>{icons.icon}</a></li>
      );
      let contacts = socials.map((social) => 
 <a className="contact-card"
-        href={social.Link}><h3>{social.icon}</h3></a>
+        href={social.Link} ><h3>{social.icon}</h3></a>
 );
+
+function toggleFunction() {
+   let element = document.getElementById("toggle");
+   element.classList.toggle('invisible');
+   
+   
+}
+
+document.onclick = function(a){
+  if (a.target.id !== 'toggle' && a.target.classList === 'invisible'){
+    let element = document.getElementById("toggle");
+    element.classList.toggle('visible');
+  } 
+  else if (a.target.id === 'toggle'){
+    toggleFunction();
+  }
+}
+
   return (
-    <section className="nav" id=''>
+    <>
+    <div className="navbar">
+    <div id='navbutton'>
+<FaBars className={`navbar-button`} onClick={toggleFunction} />
+</div>
+<div className="nav-logo">
+  <h1><a href="#">H.R</a></h1>
+ </div>
+</div>
+    <section className="nav invisible visible" id='toggle' >
     <header>
-   <div className="nav-logo">
-    <h1><a href="#">H.R</a></h1>
+    <FaBars className={`navbar-button navbar-button-sidebar`} onClick={toggleFunction}/>
+   <div className="nav-logo-sidebar">
+    <h1><a href="#" className='logotag'>H.R</a></h1>
    </div>
 </header> 
 
@@ -52,6 +80,7 @@ function Sidebar() {
 </nav>
 <div className="footer">&copy;{new Date().getFullYear()}</div>
 </section>
+</>
   )
 }
 

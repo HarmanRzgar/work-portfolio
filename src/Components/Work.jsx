@@ -7,18 +7,20 @@ function Work() {
         {expname : 'IT Intern', Type : 'Internship' ,
          place : 'Erbil Polytechnic University',
          about : 'I was at IT support for multiple EPU institutes. I worked as a data entrist, database support and network support. ',
-         id : 'EPU'},
+         id : 'EPU',
+         link : "https://epu.edu.iq/"},
 
      ]
 
 let listExperience = Experience.map((Experience) =>
-<div className="work-card" id={Experience.id}>
+      <a href={Experience.link} target="blank">
+      <div className="work-card" id={Experience.id}>
       <h2>{Experience.expname}</h2> 
       <h3 className='work-text'>{Experience.place}</h3>
       <h3 className=''>{Experience.Type}</h3>
       <div className={'work-about'}>{Experience.about}</div>
-      
        </div>
+       </a>
 );
 
   return (
