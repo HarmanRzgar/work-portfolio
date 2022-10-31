@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import '../App.css'
 
 import { FaBars } from 'react-icons/fa';
@@ -24,43 +24,34 @@ function Sidebar() {
      ];
      
      let listSidebarIcons = sidebaricons.map((icons) =>
-               <li><a href={icons.Link} onClick={toggleFunction}>{icons.icon}</a></li>
+               <li><a href={icons.Link} onClick={() => setToggled(false)}>{icons.icon}</a></li>
      );
      let contacts = socials.map((social) => 
 <a className="contact-card"
         href={social.Link} ><h3>{social.icon}</h3></a>
 );
 
-function toggleFunction() {
-   let element = document.getElementById("toggle");
-   element.classList.toggle('invisible');
-   
-   
-}
+const [toggled,setToggled] = useState(false);
 
 document.onclick = function(a){
-  if (a.target.id !== 'toggle' && a.target.classList === 'invisible'){
-    let element = document.getElementById("toggle");
-    element.classList.toggle('visible');
-  } 
-  else if (a.target.id === 'toggle'){
-    toggleFunction();
-  }
+if(a.target.id !== "toggle" && a.target.id !== "navbutton" && toggled == true){
+ setToggled(false)
+} 
 }
 
   return (
     <>
     <div className="navbar">
-    <div id='navbutton'>
-<FaBars className={`navbar-button`} onClick={toggleFunction} />
+    <div >
+<FaBars className={`navbar-button`} onClick={() => setToggled(true)} id='navbutton'/>
 </div>
 <div className="nav-logo">
   <h1><a href="#">H.R</a></h1>
  </div>
 </div>
-    <section className="nav invisible visible" id='toggle' >
+    <section className={`nav ${toggled ?  `visible` : `invisible`}`} id='toggle' >
     <header>
-    <FaBars className={`navbar-button navbar-button-sidebar`} onClick={toggleFunction}/>
+    <FaBars className={`navbar-button navbar-button-sidebar`} onClick={() => setToggled(false)}/>
    <div className="nav-logo-sidebar">
     <h1><a href="#" className='logotag'>H.R</a></h1>
    </div>

@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar'
 import Skills from './Components/Skills'
 import Work from './Components/Work'
 import Contact from './Components/Contact'
+import Footer from './Components/Footer';
 
 import React from 'react';
 import { BsFillPersonFill, BsCodeSquare, BsGithub } from 'react-icons/bs'
@@ -31,7 +32,7 @@ function App() {
    <Work/>
    <Contact/>
    </div>
-<div className="footer-secondary"></div>
+   <Footer/>
 </div>
   );
 }
