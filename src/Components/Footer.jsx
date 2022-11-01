@@ -3,7 +3,7 @@ import '../App.css'
 
 function Footer() {
   return (
-    <div className="footer-main">&copy;{new Date().getFullYear()} Harman Rzgar, All Rights Reserved.</div>
+    <div className="footer-main">&copy;{new Date().getFullYear()}, Made by Harman Rzgar.</div>
   )
 }
 

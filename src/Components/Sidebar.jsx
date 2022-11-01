@@ -13,7 +13,7 @@ function Sidebar() {
     let socials = [
         {icon : <SiGithub/> , Link : 'https://github.com/HarmanRzgar'},
         {icon : <SiLinkedin/> , Link : 'https://www.linkedin.com/in/harman-rzgar-muhammad-9b186a23b/'},
-        {icon : <SiGmail/> , Link : 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=harmanrzgarmuhammad@gmail.com'}
+        {/*{icon : <SiGmail/> , Link : 'https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=harmanrzgarmuhammad@gmail.com'}*/}
      ];
      
      let sidebaricons = [ 
