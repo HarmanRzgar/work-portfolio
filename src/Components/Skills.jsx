@@ -41,7 +41,7 @@ function Skills() {
   return (
     <div className="Skills" id='Skills'>
     <h1>My Skillsets</h1> 
-    <p>I have strong interest in various fields and Programming and Design are on the top among them.</p>
+    <p>I have strong interest in various fields. Programming and Designing are on the top among them.</p>
    <h2 className='skills-top'>Programming</h2> 
    <div className="skills-programming">
             {listProgramming}

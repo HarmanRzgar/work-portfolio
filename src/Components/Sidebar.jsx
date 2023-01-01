@@ -45,7 +45,7 @@ if(a.target.id !== "toggle" && a.target.id !== "navbutton" && toggled == true){
 <FaBars className={`navbar-button`} onClick={() => setToggled(true)} id='navbutton'/>
 </div>
 <div className="nav-logo">
-  <h1><a href="#">H.R</a></h1>
+  <h1><a href="#" className='logotag'>H.R</a></h1>
  </div>
 </div>
     <section className={`nav ${toggled ?  `visible` : `invisible`}`} id='toggle' >
