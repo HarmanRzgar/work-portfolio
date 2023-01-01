@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import '../App.css'
-
 import { FaBars } from 'react-icons/fa';
 import { BsFillPersonFill, BsCodeSquare } from 'react-icons/bs'
 import { MdAlternateEmail } from 'react-icons/md'
