@@ -11,7 +11,7 @@ function Skills() {
         {title : 'Javascript', icon : <SiJavascript/>,  color : 'color-javascript'}
       ];
       
-      let webnDesign = [ 
+    let webnDesign = [ 
         {title : 'HTML', icon : <SiHtml5/> ,  color : 'color-html'},
         {title : 'CSS', icon : <SiCss3/> ,  color : 'color-css'},
         {title : 'Tailwind', icon : <SiTailwindcss/>,  color : 'color-tailwind'},
@@ -26,7 +26,7 @@ function Skills() {
       <div className="skills-card">
       <h3>{list.icon}</h3> 
       <h2 className='skills-text'>{list.title}</h2>
-      <div className={"myBar"}><div class={list.color}></div></div>
+      <div className={"myBar"}><div class={`myProgress ${list.color} `} ></div></div>
        </div>
       );
       
@@ -34,7 +34,7 @@ function Skills() {
       <div className="skills-card">
       <h3>{list.icon}</h3> 
       <h2 className='skills-text'>{list.title}</h2>
-      <div className={"myBar"}><div class={list.color}></div></div>
+      <div className={"myBar"}><div class={`myProgress ${list.color}`}></div></div>
        </div>
       );
 

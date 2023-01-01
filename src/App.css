@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Roboto:wght@300;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 
 *{
   list-style: none;
@@ -12,11 +12,11 @@
 }
 
 :root {
-  --Color-Primary: rgb(247, 172, 75);
+  --Color-Primary: rgb(57, 170, 204);
   --Color-secondary: rgb(7, 7, 7);
-  --color-pale: #EBEBD3;
+  --color-pale: #d3e8eb;
   --Icon-Size: 40px;
-  --color-princles: #083D77;
+  --color-princles: #cc461d;
 }
 
 html {
@@ -86,7 +86,7 @@ span a {
 /*Header and Sidebar*/
 
 .nav {
-  background-color: rgb(247, 172, 75);
+  background-color: var(--Color-Primary);
   color: var(--Color-secondary);
   display: flex;
   padding: 10px;
@@ -157,23 +157,22 @@ header {
 .nav-list a:hover {
   background-color: var(--Color-secondary);
 color: var(--color-pale);
+box-sizing: border-box;
+box-shadow: -5px -5px 0 0 var(--color-princles) inset;
+
 
 }
-.nav-logo-sidebar a, .nav-logo a{
-text-decoration: none;
-color: black;
-left: 200px;
-font-size: 50px;
-font-family: 'Chakra Petch', sans-serif;
 
-}
 
 .nav-logo-sidebar {
   display: none;
 }
 
 .logotag {
-  font-family: 'Stick No Bills', sans-serif;
+  text-decoration: none;
+  color: var(--Color-secondary);
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 2.8rem;
 }
 .navbar{
   font-size: 2rem;
@@ -258,12 +257,14 @@ align-items: center;
 justify-content: center;
 background-color: var(--color-princles);
 border: 10px solid var(--color-princles);
-border-radius: 10px;
+border-radius: 2px;
+box-shadow: 5px 5px 0 4px black;
 }
 
 .pfp img {
   width: 100%;
   height: auto;
+  
 }
 
 span {
@@ -308,6 +309,7 @@ padding-top: 100px;
 
 
 .skills-card {
+
   display: flex;
   flex-direction: column;
   background-color: var(--Color-secondary);
@@ -315,10 +317,13 @@ padding-top: 100px;
   padding: 20px;
   text-align: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 2px;
   font-size: 40px;
   gap: 20px;
   transition: 250ms;
+  box-shadow: 5px 5px 0 0 var(--Color-secondary);
+ 
+  border: 2px solid var(--Color-Primary);
 
 }
 
@@ -331,7 +336,9 @@ padding-top: 100px;
 }
 
 .skills-card:hover {
-  translate: 0px -10px;
+  translate: -5px -10px;
+  box-shadow: 10px 15px 0 0 var(--color-princles);
+ 
 
 
 }
@@ -339,15 +346,15 @@ padding-top: 100px;
 .myProgress {
   width: 75%;
   height: 20px;
-  background-color: var(--Color-Primary);
-  border-radius: 10px 10px 10px 10px;
+  background-color: var(--Color-Primary) !important;
+  border-radius: 3px 3px 3px 3px !important;
   
 }
 .myBar {
   width: 100%;
   background-color: grey;
   margin: 20px;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 .skills-text {
@@ -368,15 +375,15 @@ padding-top: 100px;
     width: 90%;
     height: 20px;
     background-color: var(--Color-Primary);
-    border-radius: 10px 10px 10px 10px;
+    
     
   }
   
   .color-cpp {
     width: 65%;
     height: 20px;
-    background-color: var(--Color-Primary);
-    border-radius: 10px 10px 10px 10px;
+  
+    
     
   }
   
@@ -385,7 +392,7 @@ padding-top: 100px;
     height: 20px;
     background-color: var(--Color-Primary);
   
-    border-radius: 10px 10px 10px 10px;
+  
     
   }
   
@@ -395,7 +402,7 @@ padding-top: 100px;
     width: 95%;
     height: 20px;
     background-color: var(--Color-Primary);
-    border-radius: 10px 10px 10px 10px;
+    
     
   }
   
@@ -403,7 +410,7 @@ padding-top: 100px;
     width: 90%;
     height: 20px;
     background-color: var(--Color-Primary);
-    border-radius: 10px 10px 10px 10px;
+   
     
   }
   
@@ -411,7 +418,7 @@ padding-top: 100px;
     width: 65%;
     height: 20px;
     background-color: var(--Color-Primary);
-    border-radius: 10px 10px 10px 10px;
+   
     
   }
   
@@ -419,7 +426,7 @@ padding-top: 100px;
     width: 95%;
     height: 20px;
     background-color: var(--Color-Primary);
-    border-radius: 10px 10px 10px 10px;
+    
     
   }
   
@@ -427,7 +434,7 @@ padding-top: 100px;
     width: 75%;
     height: 20px;
     background-color: var(--Color-Primary);
-    border-radius: 10px 10px 10px 10px;
+   
     
   }
   
@@ -435,7 +442,7 @@ padding-top: 100px;
     width: 90%;
     height: 20px;
     background-color: var(--Color-Primary);
-    border-radius: 10px 10px 10px 10px;
+    
     
   }
   
@@ -443,7 +450,7 @@ padding-top: 100px;
     width: 95%;
     height: 20px;
     background-color: var(--Color-Primary);
-    border-radius: 10px 10px 10px 10px;
+    
     
   }
   
@@ -457,10 +464,12 @@ padding-top: 100px;
   padding: 20px;
   text-align: left;
   align-items: left;
-  border-radius: 10px;
+  border-radius: 2px;
   font-size: 100%;
   gap: 20px;
   transition: 250ms;
+  box-shadow: 5px 5px 0 0 var(--Color-secondary);
+  border: 2px solid var(--Color-Primary);
  
 }
 
@@ -474,7 +483,8 @@ padding-top: 100px;
 }
 
 .work-card:hover {
-  translate: 0px -10px;
+  translate: -5px -10px;
+  box-shadow: 10px 15px 0 0 var(--color-princles);
 
 
 }
